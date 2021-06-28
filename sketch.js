@@ -141,10 +141,10 @@ async function getBackgroundImage(){
 
    if (hour >= 06 && hour <= 18) {
      bg = "images/light.jpg";
+     backgroundImg = loadImage(bg);
    } else {
      bg = "images/dark.jpg";
+     backgroundImg = loadImage(bg);
    }
-
-   backgroundImg = loadImage(bg);
    console.log(backgroundImg);
 }
